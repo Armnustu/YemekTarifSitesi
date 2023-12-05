@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminUser.master.cs" Inherits="YemekTarifSitesi.AdminUser" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   <%--  <link href="StyleSheet.css" rel="stylesheet" />--%>
+    <style type="text/css">
+        .auto-style3 {
+            float: right;
+            height: 19px;
+            width:88%;
+        }
+
+        .auto-style6 {
+            float: left;
+            width: 125px;
+            height: 500px;
+        }
+
+        .auto-style7 {
+            width: 100%;
+            border: 1px solid #FFFFFF;
+        }
+
+        .auto-style8 {
+            width: 100%;
+        }
+
+        .auto-style9 {
+            width: 225px;
+            height: 225px;
+        }
+
+        .auto-style10 {
+            width: 256px;
+            height: 256px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 130px;
+            background-color: #34495e;
+        }
+
+            ul li {
+                position: relative;
+            }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid silver;
+        }
+
+            li a:hover {
+                background-color: #f39c12;
+                color: white;
+            }
+
+        li:hover ul {
+            display: block;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="container" style="height: 1700px; width: 1100px; background-color: mediumpurple; margin: auto; overflow: auto">
+            <div id="Admin" style="float:right"> 
+                    <asp:Label ID="LblKullanıcıMesajı" runat="server"></asp:Label>
+
+                </div>
+            <div id="ust" style="height: 200px; background-color: mediumpurple">
+                <img src="images/Login.jpg" style="width: 1100px; height: 200px" />
+            </div>
+            <div id="leftside" style="background-color: mediumpurple;margin-top:20px" class="auto-style6">
+
+                <ul>
+                    <li><a href="Kategori.aspx">KATEGORİLER</a></li>
+                    <li><a href="UrunTarifleri.aspx">TARİFLER</a></li>    
+                    <li><a href="YorumOnay.aspx">YORUMLAR</a></li>
+                    <li><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></li>
+                    <li><a href="Hakkimizda.aspx">HAKKIMIZDA</a></li>                    
+                    <li><a href="İletisim.aspx">İLETİŞİM</a></li>                      
+                    <li><a href="Tarifoner.aspx">TARİF ÖNER</a></li>
+                </ul>
+
+            </div>
+            <div id="rightside" style="" class="auto-style3">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <%--<asp:DataList ID="DataList1" runat="server">
+                        <ItemTemplate>
+                            <table class="auto-style8">
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriID") %>'></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdi") %>'></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:Image ID="Image1" runat="server" Style="width: 51px; height: 51px" />
+                                    </td>
+                                    <td>
+                                        <img alt="" class="auto-style9" src="icons/ekle.png" style="width: 51px; height: 51px;" />
+                                    </td>
+                                    <td>
+                                        <img alt="" class="auto-style9" src="icons/sil.png" style="width: 51px; height: 51px;" />
+                                    </td>
+                                    <td>
+                                        <img alt="" class="auto-style10" src="icons/guncelle.png" style="width: 51px; height: 51px;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>--%>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+           <%-- <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>--%>
+        </div>
+    </form>
+</body>
+</html>

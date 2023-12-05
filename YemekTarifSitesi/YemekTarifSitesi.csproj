@@ -1,0 +1,1150 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{842D814A-CB10-4A84-AED5-339C0D9858AC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YemekTarifSitesi</RootNamespace>
+    <AssemblyName>YemekTarifSitesi</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44375</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="colorlib-regform-5\colorlib-regform-5\css\main.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\css\main.min.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\index.html" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\js\global.js" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\readme.txt" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\datepicker\daterangepicker.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\datepicker\daterangepicker.js" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\datepicker\moment.min.js" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\jquery\jquery.js" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\jquery\jquery.min.js" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\select2\select2.min.css" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\select2\select2.min.js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\._index.html" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\._readme.txt" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\css\._main.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\css\._main.min.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\js\._global.js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\datepicker\._daterangepicker.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\datepicker\._daterangepicker.js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\datepicker\._moment.min.js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\._HELP-US-OUT.txt" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\css\._font-awesome.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\css\._font-awesome.min.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\fonts\._fontawesome-webfont.svg" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\jquery\._jquery.js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\jquery\._jquery.min.js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\css\._material-design-iconic-font.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\css\._material-design-iconic-font.min.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\fonts\._Material-Design-Iconic-Font.svg" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\select2\._select2.min.css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\select2\._select2.min.js" />
+    <Content Include="contact-form-07\contact-form-07\css\animate.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap.min.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\_alert.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\_box-shadow.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\_grid.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\utilities\_visibility.css" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\_media.css" />
+    <Content Include="contact-form-07\contact-form-07\css\style.css" />
+    <Content Include="contact-form-07\contact-form-07\index.html" />
+    <Content Include="contact-form-07\contact-form-07\js\bootstrap.min.js" />
+    <Content Include="contact-form-07\contact-form-07\js\jquery.min.js" />
+    <Content Include="contact-form-07\contact-form-07\js\jquery.validate.min.js" />
+    <Content Include="contact-form-07\contact-form-07\js\main.js" />
+    <Content Include="contact-form-07\contact-form-07\js\popper.js" />
+    <Content Include="contact-form-07\contact-form-07\main.html" />
+    <Content Include="contact-form-07\css\animate.css" />
+    <Content Include="contact-form-07\css\bootstrap.min.css" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\_alert.css" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\_box-shadow.css" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\_grid.css" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="contact-form-07\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="contact-form-07\css\bootstrap\utilities\_visibility.css" />
+    <Content Include="contact-form-07\css\bootstrap\_media.css" />
+    <Content Include="contact-form-07\css\style.css" />
+    <Content Include="contact-form-07\index.html" />
+    <Content Include="contact-form-07\js\bootstrap.min.js" />
+    <Content Include="contact-form-07\js\jquery.min.js" />
+    <Content Include="contact-form-07\js\jquery.validate.min.js" />
+    <Content Include="contact-form-07\js\main.js" />
+    <Content Include="contact-form-07\js\popper.js" />
+    <Content Include="contact-form-07\main.html" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._index.html" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._main.html" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\._animate.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\._bootstrap.min.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\._style.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\.__media.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\.__alert.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\.__border-radius.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\.__box-shadow.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\.__grid.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\.__screen-reader.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\.__visibility.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\utilities\.__stretched-link.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\utilities\.__visibility.css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\js\._bootstrap.min.js" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\js\._jquery.min.js" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\js\._jquery.validate.min.js" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\js\._main.js" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\js\._popper.js" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\carousel\css\bootstrap.min.css" />
+    <Content Include="Content\carousel\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Content\carousel\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="Content\carousel\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="Content\carousel\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="Content\carousel\css\bootstrap\_media.css" />
+    <Content Include="Content\carousel\css\owl.carousel.min.css" />
+    <Content Include="Content\carousel\css\owl.theme.default.min.css" />
+    <Content Include="Content\carousel\css\style.css" />
+    <Content Include="Content\carousel\images\Arnavut Ciğeri.jpg" />
+    <Content Include="Content\carousel\images\Fırında Mücver.jpg" />
+    <Content Include="Content\carousel\images\image_1.jpg" />
+    <Content Include="Content\carousel\images\image_2.jpg" />
+    <Content Include="Content\carousel\images\image_3.jpg" />
+    <Content Include="Content\carousel\images\image_4.jpg" />
+    <Content Include="Content\carousel\images\image_5.jpg" />
+    <Content Include="Content\carousel\images\image_6.jpg" />
+    <Content Include="Content\carousel\images\Kızartmadan Fırında Köfteli Patates Dizme.jpg" />
+    <Content Include="Content\carousel\images\patlıcanda lanzanya.jpg" />
+    <Content Include="Content\carousel\images\Semizotlu Fellah KöfteTarifi.jpg" />
+    <Content Include="Content\carousel\images\Sodalı Kabak Kızartma.jpg" />
+    <Content Include="Content\carousel\images\Çıtır Mantı.jpg" />
+    <Content Include="Content\carousel\index.html" />
+    <Content Include="Content\carousel\js\bootstrap.min.js" />
+    <Content Include="Content\carousel\js\jquery.min.js" />
+    <Content Include="Content\carousel\js\main.js" />
+    <Content Include="Content\carousel\js\owl.carousel.min.js" />
+    <Content Include="Content\carousel\js\popper.js" />
+    <Content Include="Content\carousel\main.html" />
+    <Content Include="Content\contact-form-18\css\bootstrap.min.css" />
+    <Content Include="Content\contact-form-18\css\bootstrap\bootstrap.css" />
+    <Content Include="Content\contact-form-18\css\bootstrap\mixins\_table-row.css" />
+    <Content Include="Content\contact-form-18\css\owl.carousel.min.css" />
+    <Content Include="Content\contact-form-18\css\style.css" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\demo.html" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\Read Me.txt" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\style.css" />
+    <Content Include="Content\contact-form-18\images\map.jpg" />
+    <Content Include="Content\contact-form-18\images\undraw-contact.svg" />
+    <Content Include="Content\contact-form-18\index.html" />
+    <Content Include="Content\contact-form-18\js\bootstrap.min.js" />
+    <Content Include="Content\contact-form-18\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\contact-form-18\js\jquery.validate.min.js" />
+    <Content Include="Content\contact-form-18\js\main.js" />
+    <Content Include="Content\contact-form-18\js\owl.carousel.min.js" />
+    <Content Include="Content\contact-form-18\js\popper.min.js" />
+    <Content Include="Content\contact-form-18\main.html" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\util.css" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="Content\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="Content\images\bg-01.jpg" />
+    <Content Include="Content\images\icons\favicon.ico" />
+    <Content Include="Content\images\icons\map-marker.png" />
+    <Content Include="Giris.aspx" />
+    <Content Include="GununYemegi.aspx" />
+    <Content Include="Hakkimizda.aspx" />
+    <Content Include="icons\ekle.png" />
+    <Content Include="icons\filter.jpg" />
+    <Content Include="icons\guncelle.png" />
+    <Content Include="icons\indir %281%29.png" />
+    <Content Include="icons\indir - Kopya.png" />
+    <Content Include="icons\logo.png" />
+    <Content Include="icons\Search-icon.png" />
+    <Content Include="icons\search.jpg" />
+    <Content Include="icons\sil.png" />
+    <Content Include="icons\Usericon  %281%29.png" />
+    <Content Include="icons\Usericon  %282%29.png" />
+    <Content Include="icons\web-search-icon-7.jpg" />
+    <Content Include="images\240_F_303876825_8HnFNgtvlo0mET2RBJMxNPcM7sJXTwMR.jpg" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\bg-01.jpg" />
+    <Content Include="images\ee40ff252c454766fe5ba27a52bf39aa - Kopya.jpg" />
+    <Content Include="images\Fırında Mücver.jpg.jpg" />
+    <Content Include="images\header2.jpg" />
+    <Content Include="images\152536.png" />
+    <Content Include="images\icons\favicon.ico" />
+    <Content Include="images\icons\map-marker.png" />
+    <Content Include="images\indir %281%29.png" />
+    <Content Include="images\indir.jpg" />
+    <Content Include="images\kuru-kiymali-guz-fasulyesi-hem-de-15-dakikada.jpg" />
+    <Content Include="images\Kızartmadan Fırında Köfteli Patates Dizme.jpg.jpg" />
+    <Content Include="images\Login.jpg" />
+    <Content Include="images\Lokanta Usulü Arnavut Ciğeri.jpg.jpg" />
+    <Content Include="images\mantarcorbası.jpg" />
+    <Content Include="images\mercimek.jpg" />
+    <Content Include="images\mutfak-93.jpg" />
+    <Content Include="images\nohut.jpg" />
+    <Content Include="images\patlıcanda lanzanya.jpg.jpg" />
+    <Content Include="images\Semizotlu Fellah KöfteTarifi.jpg.jpg" />
+    <Content Include="images\Sodalı Kabak Kızartma.jpg.jpg" />
+    <Content Include="images\tarhana-corbasi-tarifi-5.jpg" />
+    <Content Include="images\tavuksote.jpg" />
+    <Content Include="images\Çıtır Mantı.jpg.jpg" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\map-custom.js" />
+    <Content Include="Content\vendor\animate\animate.css" />
+    <Content Include="Content\vendor\animsition\css\animsition.css" />
+    <Content Include="Content\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Content\vendor\animsition\js\animsition.js" />
+    <Content Include="Content\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\popper.js" />
+    <Content Include="Content\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Content\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Content\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Content\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Content\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Content\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Content\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Content\vendor\daterangepicker\moment.js" />
+    <Content Include="Content\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Content\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Content\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Content\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="Content\vendor\select2\select2.css" />
+    <Content Include="Content\vendor\select2\select2.js" />
+    <Content Include="Content\vendor\select2\select2.min.css" />
+    <Content Include="Content\vendor\select2\select2.min.js" />
+    <Content Include="index.aspx" />
+    <Content Include="Kategori.aspx" />
+    <Content Include="KategoriDetay.aspx" />
+    <Content Include="KategoriDuzenle.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\contact-form-18\.DS_Store" />
+    <Content Include="Content\contact-form-18\css\.DS_Store" />
+    <Content Include="Content\contact-form-18\css\bootstrap.min.css.map" />
+    <Content Include="Content\contact-form-18\fonts\.DS_Store" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Content\contact-form-18\fonts\icomoon\selection.json" />
+    <Content Include="Content\contact-form-18\images\.DS_Store" />
+    <Content Include="Content\contact-form-18\php\send-email.php" />
+    <Content Include="Content\contact-form-18\scss\.DS_Store" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_alert.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_badge.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_button-group.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_buttons.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_card.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_carousel.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_close.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_code.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_forms.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_functions.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_grid.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_images.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_input-group.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_list-group.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_media.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_mixins.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_modal.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_nav.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_navbar.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_pagination.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_popover.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_print.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_progress.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_reboot.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_root.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_spinners.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_tables.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_toasts.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_transitions.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_type.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_utilities.scss" />
+    <Content Include="Content\contact-form-18\scss\bootstrap\_variables.scss" />
+    <Content Include="Content\contact-form-18\scss\style.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Content\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Content\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="Content\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="Content\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="Content\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="Content\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Content\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Content\carousel\.DS_Store" />
+    <Content Include="Content\carousel\css\.DS_Store" />
+    <Content Include="Content\carousel\css\bootstrap\.DS_Store" />
+    <Content Include="Content\carousel\css\bootstrap\mixins\.DS_Store" />
+    <Content Include="Content\carousel\fonts\.DS_Store" />
+    <Content Include="Content\carousel\images\.DS_Store" />
+    <Content Include="Content\carousel\js\.DS_Store" />
+    <Content Include="Content\carousel\scss\.DS_Store" />
+    <Content Include="Content\carousel\scss\bootstrap\.DS_Store" />
+    <Content Include="Content\carousel\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_alert.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_badge.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_button-group.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_buttons.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_card.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_carousel.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_close.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_code.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_forms.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_functions.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_grid.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_images.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_input-group.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_list-group.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_media.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_mixins.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_modal.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_nav.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_navbar.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_pagination.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_popover.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_print.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_progress.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_reboot.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_root.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_spinners.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_tables.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_toasts.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_transitions.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_type.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_utilities.scss" />
+    <Content Include="Content\carousel\scss\bootstrap\_variables.scss" />
+    <Content Include="Content\carousel\scss\style.scss" />
+    <Content Include="KullaniciMasterPage.Master" />
+    <Content Include="AdminUser.Master" />
+    <Content Include="Tarifoner.aspx" />
+    <Content Include="UyeKaydet.aspx" />
+    <Content Include="UrunDetay.aspx" />
+    <Content Include="TarifDuzenle.aspx" />
+    <Content Include="UrunTarifleri.aspx" />
+    <Content Include="YemekAra.aspx" />
+    <Content Include="YorumOnay.aspx" />
+    <Content Include="contact-form-07\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\css\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\css\bootstrap\mixins\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\fonts\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\images\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\js\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\php\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\php\sendEmail.php" />
+    <Content Include="contact-form-07\contact-form-07\scss\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\.DS_Store" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\bootstrap.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_alert.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_badge.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_button-group.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_buttons.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_card.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_carousel.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_close.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_code.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_dropdown.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_forms.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_functions.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_grid.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_images.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_input-group.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_list-group.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_media.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_mixins.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_modal.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_nav.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_navbar.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_pagination.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_popover.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_print.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_progress.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_reboot.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_root.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_spinners.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_tables.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_toasts.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_tooltip.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_transitions.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_type.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_utilities.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\bootstrap\_variables.scss" />
+    <Content Include="contact-form-07\contact-form-07\scss\style.scss" />
+    <Content Include="contact-form-07\css\.DS_Store" />
+    <Content Include="contact-form-07\css\bootstrap\.DS_Store" />
+    <Content Include="contact-form-07\css\bootstrap\mixins\.DS_Store" />
+    <Content Include="contact-form-07\fonts\.DS_Store" />
+    <Content Include="contact-form-07\images\.DS_Store" />
+    <Content Include="contact-form-07\js\.DS_Store" />
+    <Content Include="contact-form-07\php\.DS_Store" />
+    <Content Include="contact-form-07\php\sendEmail.php" />
+    <Content Include="contact-form-07\scss\.DS_Store" />
+    <Content Include="contact-form-07\scss\bootstrap\.DS_Store" />
+    <Content Include="contact-form-07\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\bootstrap.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_alert.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_badge.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_button-group.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_buttons.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_card.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_carousel.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_close.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_code.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_dropdown.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_forms.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_functions.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_grid.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_images.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_input-group.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_list-group.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_media.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_mixins.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_modal.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_nav.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_navbar.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_pagination.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_popover.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_print.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_progress.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_reboot.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_root.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_spinners.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_tables.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_toasts.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_tooltip.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_transitions.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_type.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_utilities.scss" />
+    <Content Include="contact-form-07\scss\bootstrap\_variables.scss" />
+    <Content Include="contact-form-07\scss\style.scss" />
+    <Content Include="contact-form-07\__MACOSX\._contact-form-07" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._css" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._fonts" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._images" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._js" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._php" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\._scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\._bootstrap" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\._mixins" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\._utilities" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\css\bootstrap\mixins\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\fonts\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\images\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\js\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\php\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\php\._sendEmail.php" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\._bootstrap" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\._style.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._.DS_Store" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._bootstrap-grid.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._bootstrap-reboot.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._bootstrap.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._mixins" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._utilities" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\._vendor" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__alert.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__badge.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__breadcrumb.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__button-group.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__buttons.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__card.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__carousel.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__close.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__code.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__custom-forms.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__dropdown.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__forms.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__functions.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__grid.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__images.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__input-group.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__jumbotron.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__list-group.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__media.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__mixins.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__modal.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__nav.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__navbar.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__pagination.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__popover.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__print.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__progress.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__reboot.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__root.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__spinners.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__tables.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__toasts.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__tooltip.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__transitions.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__type.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__utilities.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\.__variables.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__alert.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__background-variant.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__badge.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__border-radius.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__box-shadow.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__breakpoints.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__buttons.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__caret.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__clearfix.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__deprecate.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__float.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__forms.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__gradients.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__grid-framework.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__grid.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__hover.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__image.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__list-group.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__lists.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__nav-divider.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__pagination.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__reset-text.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__resize.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__screen-reader.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__size.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__table-row.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__text-emphasis.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__text-hide.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__text-truncate.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__transition.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\mixins\.__visibility.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__align.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__background.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__borders.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__clearfix.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__display.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__embed.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__flex.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__float.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__overflow.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__position.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__screenreaders.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__shadows.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__sizing.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__spacing.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__stretched-link.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__text.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\utilities\.__visibility.scss" />
+    <Content Include="contact-form-07\__MACOSX\contact-form-07\scss\bootstrap\vendor\.__rfs.scss" />
+    <Content Include="İletisim.aspx" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="colorlib-regform-5\colorlib-regform-5\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="colorlib-regform-5\__MACOSX\._colorlib-regform-5" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\._css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\._js" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\._vendor" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\._datepicker" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\._font-awesome-4.7" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\._jquery" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\._mdi-font" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\._select2" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\._css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\._fonts" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\fonts\._fontawesome-webfont.eot" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\fonts\._fontawesome-webfont.ttf" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\fonts\._fontawesome-webfont.woff" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\fonts\._fontawesome-webfont.woff2" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\font-awesome-4.7\fonts\._FontAwesome.otf" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\._css" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\._fonts" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\fonts\._Material-Design-Iconic-Font.eot" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\fonts\._Material-Design-Iconic-Font.ttf" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\fonts\._Material-Design-Iconic-Font.woff" />
+    <Content Include="colorlib-regform-5\__MACOSX\colorlib-regform-5\vendor\mdi-font\fonts\._Material-Design-Iconic-Font.woff2" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminUser.Master.cs">
+      <DependentUpon>AdminUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUser.Master.designer.cs">
+      <DependentUpon>AdminUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="CustomExceptions\CustomFileUploadException.cs" />
+    <Compile Include="Giris.aspx.cs">
+      <DependentUpon>Giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Giris.aspx.designer.cs">
+      <DependentUpon>Giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GununYemegi.aspx.cs">
+      <DependentUpon>GununYemegi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GununYemegi.aspx.designer.cs">
+      <DependentUpon>GununYemegi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori.aspx.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategori.aspx.designer.cs">
+      <DependentUpon>Kategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.designer.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciMasterPage.Master.cs">
+      <DependentUpon>KullaniciMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciMasterPage.Master.designer.cs">
+      <DependentUpon>KullaniciMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tarifoner.aspx.cs">
+      <DependentUpon>Tarifoner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tarifoner.aspx.designer.cs">
+      <DependentUpon>Tarifoner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyeKaydet.aspx.cs">
+      <DependentUpon>UyeKaydet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeKaydet.aspx.designer.cs">
+      <DependentUpon>UyeKaydet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.designer.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TarifDuzenle.aspx.cs">
+      <DependentUpon>TarifDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TarifDuzenle.aspx.designer.cs">
+      <DependentUpon>TarifDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunTarifleri.aspx.cs">
+      <DependentUpon>UrunTarifleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunTarifleri.aspx.designer.cs">
+      <DependentUpon>UrunTarifleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YemekAra.aspx.cs">
+      <DependentUpon>YemekAra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YemekAra.aspx.designer.cs">
+      <DependentUpon>YemekAra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YorumOnay.aspx.cs">
+      <DependentUpon>YorumOnay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YorumOnay.aspx.designer.cs">
+      <DependentUpon>YorumOnay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="İletisim.aspx.cs">
+      <DependentUpon>İletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="İletisim.aspx.designer.cs">
+      <DependentUpon>İletisim.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\files\images\" />
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58024</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

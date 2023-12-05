@@ -1,0 +1,506 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KullaniciMasterPage.master.cs" Inherits="YemekTarifSitesi.KullaniciMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>    
+    	<title>Ana Sayfa</title>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <%--Giriş css --%>
+ 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<%--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	--%>
+    <link href="contact-form-07/css/style.css" rel="stylesheet" />
+    <%--------%><%--<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>--%>
+	<link rel="stylesheet" type="text/css" href="Content/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="Content/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="Content/css/util.css">
+	<link rel="stylesheet" type="text/css" href="Content/css/main.css">    
+    <link href="Content/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="colorlib-regform-5/colorlib-regform-5/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" />
+    <link href="colorlib-regform-5/colorlib-regform-5/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Vendor CSS-->
+    <link href="colorlib-regform-5/colorlib-regform-5/vendor/select2/select2.min.css" rel="stylesheet" />   
+   <link href="colorlib-regform-5/colorlib-regform-5/vendor/datepicker/daterangepicker.css" rel="stylesheet" />
+    <!-- Main CSS-->   
+    <link href="colorlib-regform-5/colorlib-regform-5/css/main.css" rel="stylesheet" medial="all"/>
+
+<%--<h1>Carousel 07</h1>--%>
+    
+       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">		
+		<link rel="stylesheet" href="Content/carousel/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="Content/carousel/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="Content/carousel/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            margin-top: 0px;
+        }
+        /* #nav1 ul{
+            margin:10px;
+            list-style:none;
+            display:inline-block;
+            text-align:center;
+            font-family:Calibri;
+            margin-right:50px;
+           
+        }
+        #nav1 ul li a{
+         text-decoration: underline;
+        
+        }
+        #nav1 li a :hover{
+           color:white; 
+        } */
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            font-family: acumin-pro, system-ui, sans-serif;
+            margin: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            font-size: 14px;
+            background-color: #f4f4f4;
+            align-items: start;
+            min-height: 100vh;
+        }
+
+        .footer {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 10px 30px 0px 30px;
+            color: white;
+            background-color: black;
+            border-top: 1px solid #e5e5e5;
+        }
+
+            .footer > * {
+                flex: 1 100%;
+            }
+
+        .footer__addr {
+            margin-right: 1.25em;
+            margin-bottom: 2em;
+        }
+
+        .footer__logo {
+            font-family: 'Pacifico', cursive;
+            font-weight: 400;
+            text-transform: lowercase;
+            font-size: 1.5rem;
+        }
+
+        .footer__addr h2 {
+            margin-top: 1.3em;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .nav__title {
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .footer address {
+            font-style: normal;
+            color: #999;
+        }
+
+        .footer__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 36px;
+            max-width: max-content;
+            background-color: rgb(33, 33, 33, 0.07);
+            border-radius: 100px;
+            color: #2f2f2f;
+            line-height: 0;
+            margin: 0.6em 0;
+            font-size: 1rem;
+            padding: 0 1.3em;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer li {
+            line-height: 2em;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer__nav {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+            .footer__nav > * {
+                flex: 1 50%;
+                margin-right: 1.25em;
+            }
+
+        .nav__ul a {
+            color: #999;
+        }
+
+        .nav__ul--extra {
+            column-count: 2;
+            column-gap: 1.25em;
+        }
+
+        .legal {
+            display: flex;
+            flex-wrap: wrap;
+            color: #999;
+        }
+
+        .legal__links {
+            display: flex;
+            align-items: center;
+        }
+
+        .heart {
+            color: white;
+        }
+
+        @media screen and (min-width: 24.375em) {
+            .legal .legal__links {
+                margin-left: auto;
+            }
+        }
+
+        @media screen and (min-width: 40.375em) {
+            .footer__nav > * {
+                flex: 1;
+            }
+
+            .nav__item--extra {
+                flex-grow: 2;
+            }
+
+            .footer__addr {
+                flex: 1 0px;
+            }
+
+            .footer__nav {
+                flex: 2 0px;
+            }
+        }
+
+
+
+
+
+        .header {
+            overflow: hidden;
+           /* padding: 10px;*/
+        }
+
+            /* Style the header links */
+            /*   .header a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 25px;
+                border-radius: 4px;
+            }
+*/
+            /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+            .header a.logo {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            /* Change the background color on mouse-over */
+            .header a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Style the active/current link*/
+            .header a.active {
+                background-color: dodgerblue;
+                color: white;
+            }
+
+        /* Float the link section to the right */
+        .header-right {
+            float: right;
+        }
+
+        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+
+        #nav table tr td:hover {
+            background-color: red;
+            text-align: center;
+        }
+
+        #soltaraf div:hover {
+            background-color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div id="container" style=" height :1700px;width :1100px;background-color:#cc2e38;margin:auto;overflow:auto;color:black;padding:0px 0px 0px 0px;">            
+            <div class="header">
+                <a href="#default" class="logo"><asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/icons/logo.png" Width="200" Height="100px" Style="float:left" /></a>               
+          <asp:TextBox ID="txtYemekAra" runat="server" Height="32px" Width="280px" style="margin-left:45px;margin-bottom:0px;" OnTextChanged="TxtYemekAra"></asp:TextBox>        
+          <asp:ImageButton ID="ImageButton4" runat="server" Height="32px" ImageUrl="~/icons/web-search-icon-7.jpg" OnClick="ImageButton4_Click" 
+   Width="70px" style="margin-bottom:-11px;margin-left:-4px"/>       
+            <div class="header-right">
+                <a href="UyeKaydet.aspx" class=" btn btn-outline-primary">
+                    <i class="fa fa-user"></i>&nbsp;Üye Ol 
+                </a>
+                <a href="Giris.aspx" class="btn btn-outline-primary">
+                    <i class="fa fa-user"></i>&nbsp;Giriş Yap
+                </a>
+                <asp:LinkButton ID="AdminCikis2" runat="server" OnClick="AdminCikis_Click" CssClass="btn btn-outline-primary">
+                    <i class="fa fa-sign-out"></i>&nbsp;Çıkış yap
+                </asp:LinkButton>
+      <asp:Label ID="Label2" runat="server" ForeColor="Black"></asp:Label>
+     <br/>
+              
+  </div>                
+            <div id="banner" style="width:100%">
+                <img src="images/banner.png"; style="Width:100%; Height:225px" />
+                
+            </div>
+            <div id="nav" style="background-color:#1a1616;width:100% ">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2;" style="text-align:center;padding:20px 20px 20px 20px;border:1px solid white;background-color:red">
+                            <a href="index.aspx" style="color:white;" >ANASAYFA</a></td>
+                        <td class="auto-style3;"style="text-align:center ;padding:20px 20px 20px 20px;border:1px solid white"><a href="GununYemegi.aspx" style="color:white; "">GÜNÜN YEMEĞİ</a></td>
+                        <td class="auto-style4;" style="text-align:center;padding:20px 20px 20px 20px;border:1px solid white"><a href="Tarifoner.aspx"style="color:white">TARİF ÖNER</a></td>
+                        <td class="auto-style5;" style="text-align:center;padding:20px 20px 20px 20px;border:1px solid white"><a href="Hakkimizda.aspx" style="color:white">HAKKIMIZDA</a></td>
+                        <td class="auto-style5;" style="text-align:center;padding:20px 20px 20px 20px;border:1px solid white"><a href="İletisim.aspx" style="color:white">İLETİŞİM</a></td>
+                    </tr>
+                </table>
+            </div>            	
+		    <section class="ftco-section" style="padding:0px">
+			<div class="container">
+				<div class="row" >
+                    <%--<div class="col-md-12 text-center">
+						<h2 class="heading-section mb-5 pb-md-4">Carousel #07</h2>
+					</div>--%>
+					<div class="col-md-12">
+						<div class="featured-carousel owl-carousel">
+                            <asp:Repeater runat="server" ID="rptList">
+                                <ItemTemplate>
+                                    <div class="item">
+                                        <div class="blog-entry">
+                                            <a href='UrunDetay.aspx?UrunID=<%# Eval("UrunID") %>'>
+                                                <img src='/images/<%# Eval("UrunResim")%>' class="block-20 d-flex align-items-start" />
+                                            </a>
+                                            <div class="meta-date text-center p-2">
+                                                <span class="day"><%# Convert.ToDateTime(Eval("UrunTarih")).Day %></span>
+                                                <span class="mos"><%# Convert.ToDateTime(Eval("UrunTarih")).Month %></span>
+                                                <span class="yr"><%# Convert.ToDateTime(Eval("UrunTarih")).Year %></span>
+                                               
+                                            </div>
+                                              <h3 class="heading" style="text-align:center"><a href="#"><%# Eval("UrunAdi") %></a></h3>
+                                            <div class="text border border-top-0 p-4">
+                                               <%-- <h3 class="heading"><a href="#"><%# Eval("UrunAdi") %></a></h3>--%>
+                                                <p style="min-height:250px;"><%# Eval("UrunMalzeme") %></p>
+                                                <div class="d-flex align-items-center mt-4">
+                                                    <p class="mb-0">
+                                                        <a href='UrunDetay.aspx?UrunID=<%# Eval("UrunID") %>'>
+                                                Daha Fazla Oku <span class="ion-ios-arrow-round-forward"></span>
+                                            </a>
+                                                    </p>
+                                                    <p class="ml-auto meta2 mb-0">
+                                                      <a href="UrunDetay.aspx?UrunID=<%#Eval("UrunID")%>"> <asp:Label ID="Label10" runat="server" Text="Yorumlar" style="float:right" ForeColor="Black" ></asp:Label></a></a>
+                                                        <a href="#" class="meta-chat"><span class="ion-ios-chatboxes"></span>3</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>"
+						</div>
+					</div>
+				</div>
+			</div>
+		    </section>
+            <div id="soltaraf" style="background-color:black;margin-top:0px;float:left">
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>                        
+                        <div style="border: thin solid #FFFFFF; padding:10px 10px 10px 10px;">                 
+                     <a href="KategoriDetay.aspx?KategoriID=<%#Eval("KategoriID")%>"><em>
+                            <asp:Label ID="Label1" runat="server" Style="color:white; text-align:center" Text='<%# Eval("KategoriAdi") %>' CssClass="fs-16"></asp:Label>
+                            </em></a>
+                        </div>
+                      </ItemTemplate>
+                </asp:DataList>
+                </div>
+            <div id="sagtaraf" style="margin-right:0px;margin-top:0px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >  
+                                
+                           
+               </asp:ContentPlaceHolder>  
+                </div>                                  
+        </div>
+            <footer class="footer" style="width:1100px;">
+  <div class="footer__addr">
+    <h1 class="footer__logo"><asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/icons/logo.png" Width="100" Height="70" Style="float:left" /></h1>   	
+					<table>
+                        <tr><td><h2>Bize Yazın</h2></td></tr>  
+                    <tr style="border:1px solid black"><td><asp:TextBox ID="TextBox1" runat="server" Width="260" Height="35" ></asp:TextBox><td></tr>
+                    <tr style="border:1px solid black"><td><asp:TextBox ID="TextBox4" runat="server"  Width="260" Height="35" ></asp:TextBox></td></tr>
+                    <tr style="border:1px solid black"><td><asp:TextBox ID="TextBox2" runat="server" Height="121"  TextMode="MultiLine" Width="260"></asp:TextBox></td></tr>			
+					<tr style="border:1px solid black"><td><asp:Button ID="Button2" runat="server" Text="Gönder" BackColor="White" Font-Italic="True" ForeColor="Black" Height="48" Width="104" /></td></tr>
+                     </table>
+            <div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook "></i></a>
+					<a href="#"><i class="fa fa-twitter" ></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-fa-youtube"></i></a>
+				</div>
+  </div>
+  <ul class="footer__nav" >
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+      <ul class="nav__ul">
+        <li>
+         <a href="#">İletişim</a>
+        </li>
+
+        <li>
+        <a href="#">Sıkça sorulan sorular</a>
+        </li>
+            
+        <li>
+          <a href="#">Gizlilik politikası</a>
+        </li>
+          <li><a href="#">Kariyer olanakları</a></li>
+      </ul>
+    </li>
+   
+     <li class="nav__item">
+      <h2 class="nav__title">Menüler</h2>      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Akşam menüleri</a>
+        </li>
+        
+        <li>
+          <a href="#">Sabah Menüleri</a>
+        </li>
+        
+        <li>
+          <a href="#">Öğle menüleri</a>
+        </li>
+          <li>
+          <a href="#">Diyetler</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Menüler</h2>      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">özelleştir</a>
+        </li>
+        
+        <li>
+          <a href="#">Kullanım Koşulları</a>
+        </li>
+        
+        <li>
+          <a href="#">Google harita</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+  
+  <div class="legal" style="margin-bottom:15px">
+    <p>&copy;2022 Yemek tarif sitesi. Her hakkı saklıdır.</p>
+    
+    <div class="legal__links" style="margin-bottom:15px">
+      <span>Design <span class="heart">♥</span>by Arman üstü</span>
+    </div>
+  </div>
+            
+<%--<input type="image" src="resim/ok1.png" value="submit" width="50px">--%>
+ 
+
+     </footer>
+             </div>
+    <script src="/Content/carousel/js/jquery.min.js"></script>
+    <script src="/Content/carousel/js/popper.js"></script>
+    <script src="/Content/carousel/js/bootstrap.min.js"></script>
+    <script src="/Content/carousel/js/owl.carousel.min.js"></script>
+    <script src="/Content/carousel/js/main.js"></script>
+	<script src="/Content/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/Content/vendor/animsition/js/animsition.min.js"></script>
+	<script src="/Content/vendor/bootstrap/js/popper.js"></script>
+	<script src="/Content/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/Content/vendor/select2/select2.min.js"></script>
+	<script src="/Content/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/Content/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="/Content/vendor/countdowntime/countdowntime.js"></script>
+	<script src="/Content/js/main.js"></script>
+         <%-- iletişim formu scripti altta--%>
+
+
+        <script src="contact-form-07/js/jquery.min.js"></script>
+        <script src="contact-form-07/js/popper.js"></script>
+        <script src="contact-form-07/js/bootstrap.min.js"></script>
+        <script src="contact-form-07/js/jquery.validate.min.js"></script>
+        <script src="contact-form-07/js/main.js"></script>
+
+
+        <script src="colorlib-regform-5/colorlib-regform-5/vendor/jquery/jquery.min.js"></script>  
+        <script src="colorlib-regform-5/colorlib-regform-5/vendor/select2/select2.min.js"></script>    
+        <script src="colorlib-regform-5/colorlib-regform-5/vendor/datepicker/moment.min.js"></script>    
+        <script src="colorlib-regform-5/colorlib-regform-5/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+<script src="colorlib-regform-5/colorlib-regform-5/js/global.js"></script>
+
+
+    </form>
+</body>
+</html>
