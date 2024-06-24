@@ -20,10 +20,12 @@ namespace YemekTarifSitesi
         {
             if (FileUpload1.HasFile)
             {
-               
+                      
                 string uzanti = System.IO.Path.GetExtension(FileUpload1.FileName).ToLower();
                 if (uzanti == ".png" || uzanti == ".jpg")
-                {                  
+                {       
+                    if (!String.IsNullOrEmpty(txttarifad.Text.ToString())  && !String.IsNullOrEmpty(txtmalzeme.Text.ToString()) && !String.IsNullOrEmpty(txtmail.Text.ToString()) && !String.IsNullOrEmpty(txttarifoneren.Text.ToString()) && !String.IsNullOrEmpty(txtyapilis.Text.ToString()))
+                    {
                     FileUpload1.PostedFile.SaveAs(Server.MapPath("images/") + FileUpload1.FileName);
                     SqlCommand cmd = new SqlCommand("Insert into Tarif(TarifAd,TarifMalzeme,TarifYapilis,TarifResim,TarifSahip,TarifSahipMail) Values(@TarifAd,@TarifMalzeme,@TarifYapilis,@TarifResim,@TarifSahip,@TarifSahipMail)", baglanti.Sqlbaglanti());
                     cmd.Parameters.AddWithValue("@TarifAd", txttarifad.Text);
@@ -36,8 +38,12 @@ namespace YemekTarifSitesi
                     baglanti.Sqlbaglanti().Close();
                    // Response.Write("Tarifiniz Gönderilmiştir");
                     LblMesaj.Text = "Tarifiniz Gönderilmiştir";
-
-                }
+                  }
+                   else
+                   {
+                     LblMesaj.Text = "text alanları boş geçilemez";
+                    }
+                 }
                 else
                 {
                     LblHatamesajı.Text = "Resim formatı yanlış .jpg veya .png olmalıdır.";
@@ -47,8 +53,6 @@ namespace YemekTarifSitesi
             {
                 LblHatamesajı.Text = "Ürün resmi seçmediniz.";
             }
-
-
 
         }
     }
