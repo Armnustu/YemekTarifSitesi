@@ -84,7 +84,7 @@ namespace YemekTarifSitesi
             if (affect > 0)
             {
                
-                Response.Write("<script>alert('Yorum Silindi');<script>");
+                Response.Write("<script>alert('Yorum silindi');</script>");
              
       
             }
